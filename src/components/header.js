@@ -1,11 +1,16 @@
 import React from 'react';
+import InputDate from './input'
 
-function Header(){
+function Header(props){
 
     return(
       
         <div className='header'>
             <h1>Nasa Photo Of the Day</h1>
+            <InputDate 
+                pick = {props.pick}
+                setPick = {props.setPick}
+            />
             
         </div>
     );
