@@ -1,9 +1,10 @@
 import React from 'react';
 
-function Footer(){
+function Footer(props){
+    
     return(
         <div className= 'footer'>
-            <p>&copy;Copyright 2019</p>
+            <p>&copy;{props.photos.copyright}, {props.photos.date}!</p>
         </div>
     );
 }

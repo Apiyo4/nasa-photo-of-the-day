@@ -1,9 +1,17 @@
 import React from 'react';
+import Card from './cards'
 
-function CardContainer(){
+function CardContainer(props){
+   
     return(
+        
         <div className="cardContainer">
-            <Card />
+           
+            <Card 
+                photos = {props.photos}
+                setPhotos = {props.setPhotos}
+                
+            />
         </div>
     );
 }
