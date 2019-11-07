@@ -29,9 +29,9 @@ function InputDate(props){
                 <option>2012-03-14</option>
                 <option>2018-04-30</option>
                 <option>2014-05-08</option>
-                <option>2015-06-27</option>
+                <option>2015-08-27</option>
                 <option>2016-09-22</option>
-                <option>2018-02-12</option>
+                <option>2018-11-12</option>
                 <option>2019-01-06</option>
                 
             </Select>

@@ -10,11 +10,15 @@ const Img= Styled.img`
 const Div = Styled.div`
     width: 80%;
     margin: auto;
+    margin-bottom: 10px;
+    border-bottom: dashed #cbcbcb;
+    
     
 `;
 const P= Styled.p`
     font-weight: 900;
     text-align: center;
+    font-size: 2rem;
 `;
 
 function Card(props){
