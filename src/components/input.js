@@ -1,23 +1,30 @@
 import React, {useState, useEffect} from 'react';
-import App from '../App'
+import Styled from 'styled-components';
+
+const Form = Styled.form`
+    margin-bottom : 50px;
+    position: relative;
+  font-family: Arial;
+
+`;
+const Select = Styled.select`
+   margin-left: 10px;
+   border-radius: 5% / 25%;
+   padding: 5px;
+
+
+`;
 
 function InputDate(props){
-    // const[pick, setPick] = useState('2014-05-08');
-    useEffect(()=>{
-        // function handleChange(e){
-        //     setPick(e.target.value);
-        // }
-        
-
-    })
+    
     function handleChange(e){
         props.setPick(e.target.value);
     }
     return(
        < div>
-        <form>
+        <Form>
             <label>Pick a date to see a new photo:    
-            <select id="mySelect" onChange = {handleChange} >
+            <Select className="mySelect" onChange = {handleChange} >
                 <option>2019-07-28</option>
                 <option>2012-03-14</option>
                 <option>2018-04-30</option>
@@ -27,10 +34,10 @@ function InputDate(props){
                 <option>2018-02-12</option>
                 <option>2019-01-06</option>
                 
-            </select>
+            </Select>
             </label>
 
-        </form>
+        </Form>
    
       
         </div>

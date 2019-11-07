@@ -7,7 +7,7 @@ const Div = Styled.div`
 `;
 const Img = Styled.img`
    margin-top: 50px;
-    margin-right: 300px;
+    margin-right: 250px;
 `;
 const H1= Styled.h1`
     margin-top: 50px;
@@ -19,7 +19,8 @@ function Header(props){
       
         <div className='header'>
             <Div>
-                <Img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2CBCaCCdPPYfWpUOleCL5e4l7e3c2S77r6rkIeV2dVzQic6TF&s" height='40px' alt='spaceship'/>
+                <Img className="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsYvywRFeJsvy5MbbiurWVzjNXa9brTUxdYn5mHI4YN3YXObAcjQ&s" height='40px' alt='spaceship'/>
+                {/* {TweenMax.to(".logo", 4, {left:600})} */}
             
             <H1>Nasa Photo Of the Day</H1>
 
